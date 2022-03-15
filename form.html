@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+	<h2><b>Input Text Fields</b></h2>
+	<form action="/action_page.php" method="get" novalidate>
+	<fieldset>
+	<legend>Information</legend>
+		<label for="fname">First Name: </label><br>
+		<input type="text" id="fname" name="fname"><br><br>
+		<label for="lname">Last Name: </label><br>
+		<input type="text" id="lname" name="lname"><br>
+		<br>
+	</fieldset>	
+		
+		<label>Gender</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="male">Female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="male">Other</label><br><br>
+		
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Car">
+		<label for="vehicle1">Car</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+		<label for="vehicle2">Bike</label><br><br>
+		
+		<input list="browsers" name="browser">
+		<datalist id="browsers">
+			<option value="Internet Explorer">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Safari">
+		</datalist>	
+		
+		<label for="cars">Choose a car :</label>
+		<select id="cars" name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="mercedes">Mercedes</option>
+			<option value="audi">Audi</option>
+			<option value="hyundai">Hyundai</option>
+		</select><br><br>
+		<textarea name="message" rows="10" cols="20">
+		</textarea><br><br>
+		<input type="submit" value="Submit">
+		<input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+	</form>	
+</body>
+</html>
